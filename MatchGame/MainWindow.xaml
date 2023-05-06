@@ -1,0 +1,40 @@
+﻿<Window x:Class="MatchGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatchGame"
+        mc:Ignorable="d"
+        Title="Find all of the matching animals" Height="450" Width="400">
+    <Grid x:Name="mainGrid" Margin="10,-5,0,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" FontFamily="Segoe UI Emoji"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" FontFamily="Segoe UI Emoji"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" FontFamily="Segoe UI Emoji"/>
+        <TextBlock Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="1" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="1" Grid.Column="1" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="1" Grid.Column="2" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="1" Grid.Column="3" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="2" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="2" Grid.Column="1" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="2" Grid.Column="2" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="2" Grid.Column="3" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="3" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="3" Grid.Column="1" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="3" Grid.Column="2" FontFamily="Segoe UI Emoji"/>
+        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="3" Grid.Column="3" FontFamily="Segoe UI Emoji"/>
+    </Grid>
+</Window>
