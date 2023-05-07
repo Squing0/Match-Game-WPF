@@ -6,35 +6,70 @@
         xmlns:local="clr-namespace:MatchGame"
         mc:Ignorable="d"
         Title="Find all of the matching animals" Height="450" Width="400">
-    <Grid x:Name="mainGrid" Margin="10,-5,0,-1">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" FontFamily="Segoe UI Emoji"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" FontFamily="Segoe UI Emoji"/>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" FontFamily="Segoe UI Emoji"/>
-        <TextBlock Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="1" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="1" Grid.Column="1" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="1" Grid.Column="2" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="1" Grid.Column="3" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="2" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="2" Grid.Column="1" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="2" Grid.Column="2" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="2" Grid.Column="3" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="3" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="3" Grid.Column="1" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Margin="0,31,0,0" Grid.Row="3" Grid.Column="2" FontFamily="Segoe UI Emoji"/>
-        <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Margin="0,31,0,0" Grid.Row="3" Grid.Column="3" FontFamily="Segoe UI Emoji"/>
+    <Grid Margin="10,-5,0,-1">
+        <Grid x:Name="mainGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Center" Text="?" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" FontFamily="Segoe UI Emoji" VerticalAlignment="Center" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="54" FontSize="36" Grid.Row="1" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="56" FontSize="36" Grid.Row="1" Grid.Column="1" FontFamily="Segoe UI Emoji" Margin="0,20,0,0" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="1" Grid.Column="2" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="1" Grid.Column="3" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="2" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="2" Grid.Column="1" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="2" Grid.Column="2" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="2" Grid.Column="3" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="3" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="3" Grid.Column="1" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="3" Grid.Column="2" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="3" Grid.Column="3" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock x:Name="timeTextBlock" HorizontalAlignment="Center" Text="Elapsed time" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="346" FontSize="36" Grid.Row="4" FontFamily="Segoe UI Emoji" Grid.ColumnSpan="4" MouseDown = "TimeTextBlock_MouseDown"/>
+        </Grid>
+        <!--<Grid x:Name="mainGrid2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="1" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="1" Grid.Column="1" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="1" Grid.Column="2" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="1" Grid.Column="3" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="2" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="2" Grid.Column="1" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="2" Grid.Column="2" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="2" Grid.Column="3" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="3" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="3" Grid.Column="1" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="53" FontSize="36" Grid.Row="3" Grid.Column="2" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+            <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" RenderTransformOrigin="-0.012,-0.313" Height="46" Width="57" FontSize="36" Grid.Row="3" Grid.Column="3" FontFamily="Segoe UI Emoji" MouseDown = "TextBlock_MouseDown"/>
+        </Grid>-->
     </Grid>
+
 </Window>
